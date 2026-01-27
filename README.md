@@ -44,51 +44,51 @@ Portfolio-Personal/
 └── README.md
 ```
 
-## 🚀 Deployment con GitHub Student Pack
+## 🚀 Cómo subir tu portafolio a GitHub Pages
 
-Ya que tienes el **GitHub Student Pack**, puedes desplegar este portafolio gratis en varias plataformas:
+### Paso 1: Crear repositorio en GitHub
 
-### Opción 1: GitHub Pages (Recomendado)
+1. Ve a [GitHub](https://github.com/new)
+2. Nombre del repositorio: `portfolio` (o el que prefieras)
+3. Déjalo público
+4. NO marques "Initialize with README"
+5. Click en "Create repository"
 
-1. Crea un repositorio en GitHub llamado `tu-usuario.github.io`
-2. Sube estos archivos al repositorio
-3. Tu sitio estará disponible en: `https://tu-usuario.github.io`
+### Paso 2: Conectar tu código local con GitHub
+
+Reemplaza `TU-USUARIO` con tu usuario de GitHub:
 
 ```bash
-git init
-git add .
-git commit -m "Initial commit - Portfolio"
+cd Portfolio-Personal
 git branch -M main
-git remote add origin https://github.com/tu-usuario/tu-usuario.github.io.git
+git remote add origin https://github.com/TU-USUARIO/portfolio.git
 git push -u origin main
 ```
 
-### Opción 2: Namecheap Domain (Incluido en Student Pack)
+### Paso 3: Activar GitHub Pages
 
-Con el Student Pack obtienes:
-- **1 año de dominio .me GRATIS** en Namecheap
-- **1 año de SSL/TLS GRATIS**
+1. Ve a tu repositorio en GitHub
+2. Click en **Settings** (⚙️)
+3. En el menú lateral izquierdo → **Pages**
+4. En **Source** selecciona: **Deploy from a branch**
+5. En **Branch** selecciona: **main** → **/ (root)**
+6. Click en **Save**
+7. Espera 1-2 minutos
 
-**Pasos:**
-1. Ve a [Namecheap Education](https://nc.me/) y reclama tu dominio gratuito
-2. Registra un dominio como: `leonardo.me` o `leonardo-dev.me`
-3. Conecta tu dominio a GitHub Pages:
-   - En tu repositorio: Settings → Pages → Custom domain
-   - Agrega tu dominio: `www.leonardo.me`
-   - Crea un archivo `CNAME` en la raíz con tu dominio
-
-### Opción 3: Vercel (Deploy instantáneo)
-
-```bash
-npm i -g vercel
-vercel
+**🎉 Tu portafolio estará disponible en:**
+```
+https://TU-USUARIO.github.io/portfolio
 ```
 
-### Opción 4: Netlify
+### (Opcional) Conectar dominio personalizado
 
-1. Ve a [Netlify](https://netlify.com)
-2. Arrastra la carpeta del proyecto
-3. ¡Listo! Tu sitio estará en línea
+Si tienes el GitHub Student Pack, puedes obtener un dominio `.me` GRATIS por 1 año:
+
+1. Ve a [Namecheap Education](https://nc.me/)
+2. Registra: `leonardo.me` (o el nombre que prefieras)
+3. En tu repo GitHub → Settings → Pages → Custom domain
+4. Ingresa tu dominio y guarda
+5. En Namecheap, configura los DNS apuntando a GitHub Pages
 
 ## 📝 Personalización
 
@@ -134,29 +134,14 @@ Duplica el bloque `.project-card` y personaliza:
 
 ## 🎯 Próximas Mejoras
 
-- [ ] Integrar formulario de contacto funcional
-- [ ] Agregar animaciones GSAP avanzadas
-- [ ] Implementar blog personal
-- [ ] Agregar modo Light Theme completo
-- [ ] Integrar Google Analytics
-- [ ] Agregar sección de certificaciones
-- [ ] Sistema de i18n (ES/EN)
-
-## 📱 Vista Previa
-
-Para ver el sitio localmente:
-
-1. Abre `index.html` en tu navegador
-2. O usa Live Server en VS Code
-
-## 📧 Contacto
-
-- LinkedIn: [Tu perfil]
-- GitHub: [Tu usuario]
-- Email: tu@email.com
+- [ ] Integrar formulario de contacto con EmailJS
+- [ ] Agregar más proyectos reales
+- [ ] Optimizar imágenes y performance
+- [ ] Agregar animaciones GSAP
+- [ ] SEO optimization
 
 ---
 
-**Desarrollado con 💚 por Leonardo - 2025**
+**⭐ Si te gustó este proyecto, dale una estrella en GitHub!**
 
-*¡No olvides darle ⭐ al repositorio si te gustó!*
+
