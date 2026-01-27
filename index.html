@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo - Portafolio Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Leonardo<span class="dot">.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">¡Hola! 👋 Soy</p>
+                <h1 class="hero-title">Leonardo <span class="highlight">Apellido</span></h1>
+                <div class="typewriter-container">
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Transformando datos en decisiones estratégicas mediante análisis y visualizaciones impactantes.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-folder-open"></i> Ver Proyectos
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contactar
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="https://via.placeholder.com/400x400/64ffda/0a192f?text=L" alt="Leonardo" class="profile-img">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre Mí Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Soy <strong>estudiante de Ingeniería de Sistemas</strong> en la <span class="highlight">Universidad Nacional de San Agustín (UNSA)</span>, 
+                        apasionado por el análisis de datos y el desarrollo de soluciones tecnológicas innovadoras.
+                    </p>
+                    <p>
+                        Mi objetivo es <strong>transformar datos en decisiones estratégicas</strong> mediante el uso de herramientas 
+                        como Python, SQL y técnicas de Data Science. Me especializo en crear dashboards interactivos, 
+                        automatizar procesos y realizar análisis exploratorios de datos.
+                    </p>
+                    <p>
+                        Constantemente busco nuevos desafíos que me permitan expandir mis conocimientos en:
+                    </p>
+                    <ul class="tech-list">
+                        <li><i class="fas fa-check-circle"></i> Análisis y Visualización de Datos</li>
+                        <li><i class="fas fa-check-circle"></i> Machine Learning & AI</li>
+                        <li><i class="fas fa-check-circle"></i> Desarrollo Web & Automatización</li>
+                        <li><i class="fas fa-check-circle"></i> Business Intelligence</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="https://via.placeholder.com/350x350/64ffda/0a192f?text=Leonardo" alt="Foto de perfil" class="about-img">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Habilidades</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <!-- Lenguajes -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Lenguajes</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">NumPy</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Streamlit</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Herramientas</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">VS Code</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Excel Avanzado</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/0a192f/64ffda?text=Finance+Dashboard" alt="Finance Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/leonardo" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-type">Data Visualization • Real-Time</p>
+                        <h3 class="project-title">Real-Time Finance Dashboard</h3>
+                        <p class="project-description">
+                            Dashboard interactivo que muestra datos financieros en tiempo real utilizando la API de yfinance. 
+                            Incluye gráficos dinámicos, análisis de tendencias y métricas clave de mercado.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Streamlit</li>
+                            <li>Yfinance</li>
+                            <li>Plotly</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/0a192f/64ffda?text=NYC+Analysis" alt="NYC Schools">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/leonardo" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-type">Data Analysis • Statistics</p>
+                        <h3 class="project-title">NYC Schools Analysis</h3>
+                        <p class="project-description">
+                            Análisis exploratorio exhaustivo de datos de escuelas de Nueva York. Incluye limpieza de datos, 
+                            análisis estadístico, correlaciones y visualizaciones que revelan patrones educativos.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/600x400/0a192f/64ffda?text=Web+Scraper" alt="Web Scraper">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/leonardo" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-type">Automation • Web Scraping</p>
+                        <h3 class="project-title">Bot de Scraping & Automatización</h3>
+                        <p class="project-description">
+                            Bot automatizado para extracción de datos web a gran escala. Maneja navegación dinámica, 
+                            autenticación y exportación de datos estructurados con manejo robusto de errores.
+                        </p>
+                        <ul class="project-tech">
+                            <li>Python</li>
+                            <li>Selenium</li>
+                            <li>BeautifulSoup</li>
+                            <li>Pandas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Hablemos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>¿Tienes un proyecto en mente?</h3>
+                    <p>
+                        Actualmente estoy abierto a nuevas oportunidades y colaboraciones. 
+                        Ya sea que tengas una pregunta o simplemente quieras saludar, 
+                        ¡estaré encantado de responderte!
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:leonardo@example.com" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>leonardo@example.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/leonardo" target="_blank" class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/leonardo</span>
+                    </a>
+                    <a href="https://github.com/leonardo" target="_blank" class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/leonardo</span>
+                    </a>
+                </div>
+                <a href="mailto:leonardo@example.com" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/leonardo" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/leonardo" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:leonardo@example.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://twitter.com/leonardo" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                Desarrollado por <span class="highlight">Leonardo Apellido</span> - 2025
+            </p>
+            <p class="footer-subtext">
+                Construido con <i class="fas fa-heart"></i> usando HTML, CSS & JavaScript
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Typewriter Effect
+        const texts = [
+            "Ingeniero de Sistemas en formación",
+            "Data Analyst",
+            "Python Developer",
+            "Problem Solver"
+        ];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typewriterElement = document.getElementById('typewriter');
+
+        function typeWriter() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typewriterElement.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentText.length) {
+                setTimeout(() => isDeleting = true, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+            }
+
+            const typingSpeed = isDeleting ? 50 : 100;
+            setTimeout(typeWriter, typingSpeed);
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const root = document.documentElement;
+        let isDark = true;
+
+        themeToggle.addEventListener('click', () => {
+            isDark = !isDark;
+            
+            if (isDark) {
+                root.style.setProperty('--bg-primary', '#0a192f');
+                root.style.setProperty('--bg-secondary', '#112240');
+                root.style.setProperty('--text-primary', '#ccd6f6');
+                root.style.setProperty('--text-secondary', '#8892b0');
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            } else {
+                root.style.setProperty('--bg-primary', '#f8f9fa');
+                root.style.setProperty('--bg-secondary', '#ffffff');
+                root.style.setProperty('--text-primary', '#1a202c');
+                root.style.setProperty('--text-secondary', '#4a5568');
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-category, .project-card, .about-content, .contact-content').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Initialize
+        window.addEventListener('load', () => {
+            typeWriter();
+        });
+    </script>
+</body>
+</html>

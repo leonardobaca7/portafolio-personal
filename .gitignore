@@ -1,0 +1,28 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+
+# Node modules (para cuando agregues backend)
+node_modules/
+npm-debug.log*
+
+# Archivos de entorno (para cuando agregues backend)
+.env
+.env.local
+.env.production
+
+# Build outputs (para cuando agregues React)
+dist/
+build/
+.cache/
+
+# Docker (para cuando dockerices)
+*.log
+docker-compose.override.yml
